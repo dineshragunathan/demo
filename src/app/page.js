@@ -22,11 +22,21 @@ export default function Home() {
               box 4
             </div>
           </div>
-          <div className="bg-gray-400 h-[45vh] my-5 rounded-md text-white flex items-center justify-center">
-            Reports 1
+          <div className="w-full flex flex-row gap-5 my-5">
+            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
+              G1
+            </div>
+            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
+              G2
+            </div>
           </div>
-          <div className="bg-gray-400 h-[45vh] my-5 rounded-md text-white flex items-center justify-center">
-            Reports 2
+          <div className="w-full flex flex-row gap-5 my-5">
+            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
+              G3
+            </div>
+            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
+              G4
+            </div>
           </div>
         </div>
       </div>
