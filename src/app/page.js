@@ -1,9 +1,11 @@
 import Sidebar from "./components/sideBar";
 import Header from "./components/header"
+import Login from "./login/page"
 export default function Home() {
   return (
     <>
-      <Header />
+      <Login />
+      {/* <Header />
       <div className="h-screen w-screen flex flex-row">
         <Sidebar />
         <div className="bg-white h-screen w-screen text-black text-3xl p-5 overflow-scroll">
@@ -39,7 +41,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
