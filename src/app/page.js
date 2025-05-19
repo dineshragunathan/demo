@@ -2,10 +2,14 @@ import Sidebar from "./components/sideBar";
 import Header from "./components/header"
 import Login from "./login/page"
 import Profile from "./profile/page"
+import Dashboard from "./dashboard/page";
+import Leave from "./leave/page"
 export default function Home() {
   return (
     <>
-      <Profile />
+      <Leave />
+      {/* <Dashboard /> */}
+      {/* <Profile /> */}
       {/* <Login /> */}
       {/* <Header />
       <div className="h-screen w-screen flex flex-row">
