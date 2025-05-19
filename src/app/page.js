@@ -1,10 +1,12 @@
 import Sidebar from "./components/sideBar";
 import Header from "./components/header"
 import Login from "./login/page"
+import Profile from "./profile/page"
 export default function Home() {
   return (
     <>
-      <Login />
+      <Profile />
+      {/* <Login /> */}
       {/* <Header />
       <div className="h-screen w-screen flex flex-row">
         <Sidebar />
