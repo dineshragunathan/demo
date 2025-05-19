@@ -26,7 +26,7 @@ export default function Dashboard() {
                             href="../leave"
                             className="h-full w-[50%] bg-gray-300 rounded-md flex justify-center items-center hover:border-2 border-blue-600 transition-all duration-100"
                         >
-                            Leave Application
+                            Leave Management
                         </Link>
                     </div>
 
