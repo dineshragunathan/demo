@@ -1,53 +1,46 @@
+'use client';
+import Header from "./components/header";
 import Sidebar from "./components/sideBar";
-import Header from "./components/header"
-import Login from "./login/page"
-import Profile from "./profile/page"
-import Dashboard from "./dashboard/page";
-import Leave from "./leave/page"
-export default function Home() {
-  return (
-    <>
-      {/* <Leave /> */}
-      <Dashboard />
-      {/* <Profile /> */}
-      {/* <Login /> */}
-      {/* <Header />
-      <div className="h-screen w-screen flex flex-row">
-        <Sidebar />
-        <div className="bg-white h-screen w-screen text-black text-3xl p-5 overflow-scroll">
-          Faculty Name
-          <div className="flex flex-row gap-5 w-full mt-3">
-            <div className=" bg-gray-500 w-[25%] h-[12vh] rounded-md flex items-center justify-center text-white">
-              box 1
+import Link from "next/link";
+
+export default function Dashboard() {
+    return (
+        <>
+            <Header />
+            <div className="h-screen w-screen flex">
+                <Sidebar />
+                <div className="bg-white flex-1 text-black p-8 overflow-y-auto">
+                    <h1>Hello John Doe!</h1>
+
+                    <div className="flex flex-row w-full h-[40%] gap-5 m-3 ml-0">
+
+                        <Link
+                            href="/"
+                            className="h-full w-[50%] bg-gray-300 rounded-md flex justify-center items-center hover:border-2 border-blue-600 transition-all duration-100"
+                        >
+                            Your Schedule
+                        </Link>
+
+
+                        <Link
+                            href="../leave"
+                            className="h-full w-[50%] bg-gray-300 rounded-md flex justify-center items-center hover:border-2 border-blue-600 transition-all duration-100"
+                        >
+                            Leave Application
+                        </Link>
+                    </div>
+
+                    <div className="flex flex-row w-full h-[40%] gap-5 my-6 m-3 ml-0">
+
+                        <Link
+                            href="/"
+                            className="h-full w-[50%] bg-gray-300 rounded-md flex justify-center items-center hover:border-2 border-blue-600 transition-all duration-100"
+                        >
+                            Activity Dashboard
+                        </Link>
+                    </div>
+                </div>
             </div>
-            <div className=" bg-gray-500 w-[25%] h-[12vh] rounded-md flex items-center justify-center text-white">
-              box 2
-            </div >
-            <div className=" bg-gray-500 w-[25%] h-[12vh] rounded-md flex items-center justify-center text-white">
-              box 3
-            </div>
-            <div className=" bg-gray-500 w-[25%] h-[12vh] rounded-md flex items-center justify-center text-white">
-              box 4
-            </div>
-          </div>
-          <div className="w-full flex flex-row gap-5 my-5">
-            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
-              G1
-            </div>
-            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
-              G2
-            </div>
-          </div>
-          <div className="w-full flex flex-row gap-5 my-5">
-            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
-              G3
-            </div>
-            <div className="w-[50%] h-[45vh] bg-gray-400 rounded-md flex items-center justify-center text-white">
-              G4
-            </div>
-          </div>
-        </div>
-      </div> */}
-    </>
-  );
+        </>
+    );
 }
