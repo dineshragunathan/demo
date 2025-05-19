@@ -7,8 +7,8 @@ import Leave from "./leave/page"
 export default function Home() {
   return (
     <>
-      <Leave />
-      {/* <Dashboard /> */}
+      {/* <Leave /> */}
+      <Dashboard />
       {/* <Profile /> */}
       {/* <Login /> */}
       {/* <Header />
